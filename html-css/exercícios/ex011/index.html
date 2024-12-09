@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="shortcut icon" href="jota.ico.ico" type="ícone de jota">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto_p.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px )" srcset="imagens/foto_m.jpeg" type="image/jpeg">
+        <img src="imagens/foto_g.jpeg" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/November Rain Solo - Guns 'N Roses - Acoustic Guitar Cover.mp3" type="audio/mpeg">
+        <source src="midia/November Rain Solo - Guns 'N Roses - Acoustic Guitar Cover.ogg" type="audio/ogg">
+        <source src="midia/November Rain Solo - Guns 'N Roses - Acoustic Guitar Cover.wav" type="audiio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/November Rain Solo - Guns 'N Roses - Acoustic Guitar Cover.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
